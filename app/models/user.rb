@@ -1,9 +1,9 @@
 class User < ApplicationRecord
 	validates :first_name,
-		presence: true
+		presence: true,
 		length: { minimum: 2 }
 	validates :last_name,
-		presence: true
+		presence: true,
 		length: { minimum: 2 }
 	validates :description,
 		length: { maximum: 500 }
