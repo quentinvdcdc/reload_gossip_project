@@ -1,0 +1,6 @@
+<h1>Home Page de Gossip Project</h1>
+<% @gossips.each do |gossip| %>
+<p>Ceci est l'auteur : <%= gossip.user.first_name%></p>
+<p>Ceci est le titre : <%= gossip.title%></p>
+<p>Lien vers la page : <%= link_to "clique ici", gossip_show_path(gossip) %></p><br/><br/>
+<% end %>

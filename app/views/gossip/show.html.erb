@@ -1,0 +1,5 @@
+<h1>Gossip n° <%= @gossip.id %></h1>
+<p>Gossip auteur <%= @gossip.user.first_name %><%= @gossip.user.last_name %></p>
+<p>Voici sa page <%= link_to 'clique ici', user_show_path(@gossip.user) %></p>
+<p>Gossip title <%= @gossip.title %></p>
+<p>Gossip contenu <%= @gossip.content %></p>
